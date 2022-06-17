@@ -1,5 +1,5 @@
 .switch {
-    background: #343d5b;
+    background: rgb(247, 187, 56);
     border-radius: 1000px;
     border: none;
     position: relative;
@@ -23,7 +23,7 @@
     }
 
     &.active {
-        background: orange;
+        background: rgb(62, 143, 12);
         color: #000;
 
         &::after {
@@ -59,8 +59,7 @@ body {
 
         a,
         h1,
-        h3,
-        span,
+        h3,'¿'        span,
         small,
         p {
             color: #fff;

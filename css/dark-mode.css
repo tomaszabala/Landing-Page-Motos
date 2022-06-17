@@ -1,5 +1,5 @@
 .switch {
-  background: #343d5b;
+  background: #f7bb38;
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -26,7 +26,7 @@
 }
 
 .switch.active {
-  background: orange;
+  background: #3e8f0c;
   color: #000;
 }
 
