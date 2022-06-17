@@ -59,11 +59,12 @@ body {
 
         a,
         h1,
-        h3,'¿'        span,
+        h3,
+        span,
         small,
         p {
             color: #fff;
-        }
+        };
 
         .info {
             border: 1px solid rgba(126, 124, 124, 0.562);
@@ -109,4 +110,4 @@ body {
             color: #000;
         }
     }
-}
+};
