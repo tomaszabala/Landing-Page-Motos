@@ -1,0 +1,25 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s linear;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 990px) {
+    .galeria{
+        width: auto;
+    }
+}
+
+.article-img {
+    width: auto;
+    height: 50px;
+}
+
+.img {
+    width: 150px;
+    height: auto;
+}
