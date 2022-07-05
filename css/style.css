@@ -157,12 +157,49 @@ body {
     color: #fff;
 }
 
-.box>img {
-    max-width: 70px;
-    height: 70px;
+.grupo-1 {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
 }
 
-.pie-pagina>.grupo-1 {
+.logo-footer {
+    margin: 10% 0%;
+    height: 10rem;
+    width: 15rem;
+}
+
+.frase-footer {
+    font-size: 22px;
+    width: 18rem;
+}
+
+.frase2-footer {
+    font-size: 18px;
+    width: 15rem;
+}
+
+.fb,
+.ig,
+.yt {
+    color: #000;
+}
+
+.recuadro-footer {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(162, 176, 51);
+}
+
+.derechos {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+/* .pie-pagina>.grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -188,4 +225,4 @@ body {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
-}
+} */
