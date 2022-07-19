@@ -13,12 +13,12 @@
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+    /* padding-right: 3%; */
     color: aliceblue;
     display: flex;
     justify-content: space-around;
     height: 80px;
-
-    background-color: #1c1d1e;
+    background-color: rgba(28, 29, 30, .9);
 }
 
 .nav-div1,
@@ -26,10 +26,18 @@
 .nav-div3 {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-div3 {
+    margin-right: 250px;
 }
 
 .nombre {
     margin: 0;
+    padding-left: 10px;
 }
 
 nav {
@@ -93,37 +101,66 @@ body {
 }
 
 .slide {
-    width: 100vw;
-    margin-top: 0;
+    width: 1150px;
+    margin-top: 70px;
     margin-bottom: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
 }
 
 .slide img {
-    height: 80vh;
+    height: 50vh;    
 }
+
+/* INFO HOME */
 
 .info-home {
     margin-right: auto;
     margin-left: auto;
+    /* width: 800px; */
 }
 
 .titulo {
     display: flex;
     justify-content: center;
     color: rgb(62, 143, 12);
-    /* text-transform: uppercase; */
     font-weight: bold;
     text-shadow: #000 1px 1px 1px;
+    margin-top: 3rem;
 }
 
 .text-home {
-    position: relative;
-    margin: 0 20rem;
+    /* position: relative; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1150px;
 }
+
+.servicios {
+    width: 755px;
+    height: 35px;
+    padding: 0 0 0 15px;
+    background-color: rgba(45, 45, 45, 0.177);
+    border-radius: 4px;
+    text-shadow: rgb(253, 253, 253) 1px 1px 1px;
+}
+
+.ul-serv {
+    list-style: none;
+}
+
+.li-img {
+    width: 25rem;
+    margin-bottom: 80px;
+}
+
+/* PIE DE PAGINA */
 
 .pie-pagina {
     width: 100%;
-    background-color: #1c1d1e;
+    background-color: rgba(28, 29, 30, .9);
     color: #fff;
 }
 
