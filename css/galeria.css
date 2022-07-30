@@ -34,7 +34,7 @@ h3::before {
     z-index: -1;
 }
 
-h3>span{
+h3>span {
     background-color: #ecf4fb;
     padding: 0 15px;
 }
@@ -56,7 +56,7 @@ h3>span{
     display: grid;
     width: 80%;
     margin: 50px auto;
-    grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 40px;
 }
 
@@ -105,9 +105,11 @@ h3>span{
     h3 {
         text-decoration: underline;
     }
+
     h3::before {
         display: none;
     }
+
     h3>span {
         padding: 0;
     }
