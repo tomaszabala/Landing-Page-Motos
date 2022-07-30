@@ -94,3 +94,15 @@ main {
     padding-top: 8rem;
     font-size: 30px;
 }
+
+.text-mail-circ {
+    font-size: 15px;
+}
+
+.text-circ {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+}
