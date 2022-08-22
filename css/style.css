@@ -81,9 +81,6 @@ nav {
     list-style: none;
     width: 180px;
     background-color: rgba(0, 0, 0, .5);
-}
-
-.menu-v {
     padding-left: 0;
 }
 
@@ -108,7 +105,6 @@ body {
     color: #1c1d1e;
     background-color: #ecf4fb;
 }
-
 
 .slide {
     width: 1150px;
