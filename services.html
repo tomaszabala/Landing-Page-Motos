@@ -4,10 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dark-mode.css">
+    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans&family=Rubik&display=swap" rel="stylesheet">
     <title>Morelli Motos</title>
+    <script src="https://kit.fontawesome.com/551b5bf235.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Morelli Motos</h1>
+    <header>
+        <nav class="nav-main">
+            <div class="nav-div1">
+                <img src="./fotos-pagina/logo-horizontal-reescalado.png" alt="logo-header">
+                <h2 class="nombre">Morelli Motos</h2>
+            </div>
+            <div class="nav-div2">
+              <ul class="menu-h">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="index.html" class="nav-link">Servicios</a>
+                  <ul class="menu-v">
+                    <li><a href="armado-de-motores.html">Armado de motores</a></li>
+                    <li><a href="potenciadores.html">Potenciadores</a></li>
+                    <li><a href="customizaciones.html">Customizaciones</a></li>
+                    <li><a href="services.html">Services</a></li>
+                  </ul>
+                </li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="galeria.html" class="nav-link">Galería</a></li>
+              </ul>
+            </div>
+            <div class="nav-div3">
+                <button class="switch" id="switch">
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </button>
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="info-home">
+            <div class="text-home">
+                <h3>Services</h3>
+                <p>Es importante darle un concentimiento a tu moto para que no pase nada grave, nosotros nos encargamos de la parte servicial de la moto. Cambio de fluidos, ajustes varios y cambios de accesorios.</p>                
+                    <article class="article-img">
+                        <img class="li-img" src="./fotos-pagina/armado-motor.jpg" alt="">
+                        <img class="li-img" src="./fotos-pagina/armado-motor2.jpeg" alt="">
+                    </article>
+
+                <h3>Inventos de todo tipo</h3>
+                <p>Si no existe lo fabricamos.</p>
+                <img class="li-img" src="./fotos-pagina/galeria1.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+          <div class="box">
+                <img class="logo-footer" src="./fotos-pagina/logo-horizontal-removebg-preview.png" alt="">
+          </div>
+          <div class="box">
+            <h2 class="frase-footer">Service y mecánica de motos</h2>
+          </div>
+          <div class="box">
+            <h2 class="frase2-footer">seguinos en nuestras redes</h2>
+            <div class="red-social">
+              <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/morelli_motos/?i" class="ig"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube .com/channel/UCgE-4xexzix3jaVPBQ1p9eg" class="yt"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="turno-wpp">
+              <p class="turno">solicitar turno:</p>
+              <a class="wpp" rel="stylesheet" href="https://wa.me/5491127055419/?text=Hola,%20me%20contacto%20desde%20la%20web!">click aquí</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="recuadro-footer"></div>
+        
+        <div class="grupo-2">
+          <small class="derechos">&copy; 2022 Morelli Motos - Todos los derechos reservados.</small>
+        </div>
+        
+      </footer>
+      
+      <!-- JAVASCRIPT -->
+      <script src="./main.js"></script>
     
 </body>
 </html>

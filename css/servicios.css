@@ -1,0 +1,11 @@
+.article-img {
+    display: grid;
+    width: 80%;
+    margin: 50px auto;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 40px;
+}
+
+.li-img {
+    height: 35rem;
+}
