@@ -1,15 +1,12 @@
 .switch {
-  background: #f7bb38;
+  background: rgba(221, 59, 10, 0.921);
   border-radius: 1000px;
   border: none;
   position: relative;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   outline: none;
 }
-
 .switch .fa-solid {
   width: 30px;
   height: 30px;
@@ -18,23 +15,19 @@
   background: none;
   color: #fff;
 }
-
 .switch span {
   width: 30px;
   height: 30px;
   line-height: 30px;
 }
-
 .switch.active {
-  background: #3e8f0c;
+  background: rgb(62, 143, 12);
   color: #000;
 }
-
 .switch.active::after {
   right: 0;
   left: unset;
 }
-
 .switch::after {
   content: "";
   display: block;
@@ -46,23 +39,17 @@
   left: 0;
   right: unset;
   border-radius: 100px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  -webkit-box-shadow: 0px 0px 2px 2px black;
-          box-shadow: 0px 0px 2px 2px black;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
 }
 
 body {
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.568);
-          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.568);
+  transition: 0.3s ease all;
+  box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.568);
 }
-
 body.dark {
-  background: #1f1e1e;
+  background: rgb(31, 30, 30);
 }
-
 body.dark a,
 body.dark h1,
 body.dark h3,
@@ -70,53 +57,4 @@ body.dark span,
 body.dark small,
 body.dark p {
   color: #fff;
-}
-
-body.dark .info {
-  border: 1px solid rgba(126, 124, 124, 0.562);
-}
-
-body.dark .info:hover {
-  -webkit-box-shadow: 0 12px 24px rgba(139, 137, 137, 0.2);
-          box-shadow: 0 12px 24px rgba(139, 137, 137, 0.2);
-}
-
-body.dark .img-grande {
-  border: 2px solid rgba(182, 179, 179, 0.562);
-}
-
-body.dark .img-grande:hover {
-  -webkit-box-shadow: 0 12px 24px rgba(139, 137, 137, 0.2);
-          box-shadow: 0 12px 24px rgba(139, 137, 137, 0.2);
-}
-
-body.dark .border-img {
-  border: 1px solid rgba(126, 124, 124, 0.562);
-}
-
-body.dark .border-img:hover {
-  -webkit-box-shadow: 0 12px 24px rgba(139, 137, 137, 0.2);
-          box-shadow: 0 12px 24px rgba(139, 137, 137, 0.2);
-}
-
-body.dark .articulos {
-  border: 1px solid rgba(126, 124, 124, 0.562);
-}
-
-body.dark .articulos:hover {
-  -webkit-box-shadow: 0 12px 24px rgba(139, 137, 137, 0.2);
-          box-shadow: 0 12px 24px rgba(139, 137, 137, 0.2);
-}
-
-body.dark .discount {
-  color: #5f5d5d;
-}
-
-body.dark .numero {
-  color: #000;
-}
-
-body.dark .cart {
-  color: #000;
-}
-/*# sourceMappingURL=dark-mode.css.map */
+}/*# sourceMappingURL=dark-mode.css.map */
