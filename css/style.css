@@ -78,6 +78,8 @@ nav {
 .menu-v {
     position: absolute;
     display: none;
+    z-index: 1;
+    /* flex-direction: ; */
     list-style: none;
     width: 180px;
     background-color: rgba(0, 0, 0, .5);
@@ -96,7 +98,7 @@ nav {
     display: flex;
     position:relative;
     color: white;
-    padding: 15px;
+    padding: 5px;
     text-decoration: none;
 }
 
