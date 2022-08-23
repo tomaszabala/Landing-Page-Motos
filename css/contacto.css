@@ -14,7 +14,8 @@
     align-items: center;
     justify-content: center;
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
+    margin-bottom: 6rem;
     color: #000;
 }
 
@@ -72,7 +73,7 @@
     top: 0;
     left: 0;
     border-radius: 50%;
-    background-color: rgb(247, 187, 56);
+    background-color: rgba(221, 59, 10, 0.75);
 }
 
 .titulo-parrafo {
