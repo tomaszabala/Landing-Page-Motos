@@ -250,3 +250,34 @@ body {
 .wpp:hover {
     color: rgba(244, 103, 60, 0.944);
 }
+
+@media only screen and (max-width: 767px){
+
+    header{
+        box-sizing: border-box;
+    }
+
+   #imgLogo{
+    display: none;
+   }
+
+   .nombre{
+    display: none;
+   }
+
+   .nav-main{
+    height: 20em;
+   }
+
+    .menu-h{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        /* margin-top: 11em; */
+        position: inherit;
+        margin-right: 11.5em;
+    }
+
+    
+  }
