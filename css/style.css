@@ -22,7 +22,7 @@
 .nav-main {
   width: 100%;
   color: white;
-  height: 4rem;
+  height: 3rem;
   background-color: black;
 }
 
@@ -31,13 +31,15 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+
 }
 
 .navBar{
   background-color: rgba(0, 0, 0, 0.5) ;
   overflow: visible;
   width: 100%;
- 
+  position: relative;
+
   /* height: inherit; */
 }
 
@@ -48,7 +50,7 @@ Removes the underline with text decoration = none.*/
   color: white;
   padding: 11px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.1rem;
   font-family: Tahoma;
 }
 
@@ -98,6 +100,63 @@ Removes the underline with text decoration = none.*/
     background-color: white;
     color: black;
   }
+}
+
+@media only screen and (max-width: 967px) {
+
+  #carouselExampleIndicators{
+    /* display: block; */
+    /* grid-template-columns: 1fr; */
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+   }
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .titulo{
+    color: rgba(221, 59, 10, 0.921);
+    font-weight: bold;
+    text-shadow: #000 1px 1px 1px;
+    font-size: 2rem;
+    margin: -1.7rem;
+    /* transition: 0.4s; */
+    }
+  
+    /* .titulo:hover{
+      transform: translateX(2rem);
+    } */
+    #carouselExampleIndicators{
+      /* display: block; */
+      /* grid-template-columns: 1fr; */
+      max-width: 100%;
+      max-height: 100%;
+      padding: 1rem;
+     }
+}
+
+@media screen and (max-width: 576px) {
+
+  .titulo{
+  color: rgba(221, 59, 10, 0.921);
+  font-weight: bold;
+  text-shadow: #000 1px 1px 1px;
+  font-size: 2rem;
+  margin: -1.7rem;
+  /* transition: 0.4s; */
+  }
+
+  /* .titulo:hover{
+    transform: translateX(2rem);
+  } */
+  #carouselExampleIndicators{
+    /* display: block; */
+    /* grid-template-columns: 1fr; */
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+   }
 }
 
 .nav-div1,
