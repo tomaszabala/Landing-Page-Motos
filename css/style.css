@@ -12,16 +12,92 @@
   padding: 0;
 }
 
-.nav-main {
-  font-size: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  color: aliceblue;
+/* .header{
   display: flex;
-  justify-content: space-around;
-  height: 80px;
-  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+} */
+
+.nav-main {
+  width: 100%;
+  color: white;
+  height: 4rem;
+  background-color: black;
+}
+
+.navBar a{
+ display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navBar{
+  background-color: rgba(0, 0, 0, 0.5) ;
+  overflow: visible;
+  width: 100%;
+ 
+  /* height: inherit; */
+}
+
+/*Floats each item to the left with padding of 14 & 16 px.
+Removes the underline with text decoration = none.*/
+.navBar a{
+  float: left;
+  color: white;
+  padding: 11px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Tahoma;
+}
+
+/*Background color change during hover state*/
+.navBar a:hover{
+  background-color: white;
+  color: black;
+}
+
+/*Hides the menu Icon which will show when the nav needs to be responsive*/
+.navBar .icon{
+  display: none;
+}
+
+/*Set your custom screen width here replacing 700*/
+@media (max-width: 700px){
+/*Ignores the first link (which is Home) in the div and       applies 'display = none' to everything else.   Basically hiding everything but Home*/
+  .navBar a:not(:first-child){
+    display: none;
+    background: rgba(0, 0, 0, 0.5)
+  }
+/*Brings the menu icon into view and floats it to the right*/
+  .navBar a.icon{
+    display: block; float: right;
+  }
+  
+/*The navBar class will be changed to 'navBar responsive' using JS. This chunk of CSS makes the menu icon stay where it is by making the position absolute within it's parent 'right top corner'. Without this, the icon will get kicked around when the items are collapsed and expanded*/
+  .navBar.responsive {
+    position: relative;
+  }
+  .navBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+/*Removes the originally set float and brings them to view*/
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    background-color: black;
+  }
+
+  .navBar.responsive a:hover{
+    background-color: white;
+    color: black;
+  }
 }
 
 .nav-div1,
@@ -49,7 +125,7 @@
 
 nav {
   margin: auto;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
 }
 
@@ -246,71 +322,4 @@ body {
 
 .wpp:hover {
   color: rgba(244, 103, 60, 0.944);
-}
-
-/*=============== BREAKPOINTS ===============*/
-
-/* For medium devices */
-@media only screen and (max-width: 767px) {
-  header {
-    box-sizing: border-box;
-    background-color: red;
-    /* display: none; */
-    height: 10rem;
-  }
-
-  #imgLogo {
-    display: none;
-  }
-
-  .nombre {
-    display: none;
-  }
-
-  .nav-main {
-    height: 20em;
-  }
-
-  .menu-h {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    /* margin-top: 11em; */
-    position: inherit;
-    margin-right: 11.5em;
-    display: none;
-  }
-
-  .hamburguer-bar{
-    display: block;
-    color: white;
-    position: absolute;
-    top: 0.5em;
-    left: 0.5em;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    height: 20em;
-    width: 252px;
-  }
-
-  .nav-div3{
-    /* display: block; */
-    color: white;
-    position: absolute;
-    top: 0.5em;
-    left: 33em;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
-}
-
-@media screen and (max-width: 576px) {
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
-  
 }
