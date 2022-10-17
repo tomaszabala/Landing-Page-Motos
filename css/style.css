@@ -26,16 +26,15 @@
   background-color: black;
 }
 
-.navBar a{
- display: flex;
+.navBar a {
+  display: flex;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-
 }
 
-.navBar{
-  background-color: rgba(0, 0, 0, 0.5) ;
+.navBar {
+  background-color: rgba(0, 0, 0, 0.5);
   overflow: visible;
   width: 100%;
   position: relative;
@@ -45,7 +44,7 @@
 
 /*Floats each item to the left with padding of 14 & 16 px.
 Removes the underline with text decoration = none.*/
-.navBar a{
+.navBar a {
   float: left;
   color: white;
   padding: 11px 16px;
@@ -55,29 +54,30 @@ Removes the underline with text decoration = none.*/
 }
 
 /*Background color change during hover state*/
-.navBar a:hover{
+.navBar a:hover {
   background-color: white;
   color: black;
 }
 
 /*Hides the menu Icon which will show when the nav needs to be responsive*/
-.navBar .icon{
+.navBar .icon {
   display: none;
 }
 
 /*Set your custom screen width here replacing 700*/
-@media (max-width: 700px){
-/*Ignores the first link (which is Home) in the div and       applies 'display = none' to everything else.   Basically hiding everything but Home*/
-  .navBar a:not(:first-child){
+@media (max-width: 700px) {
+  /*Ignores the first link (which is Home) in the div and       applies 'display = none' to everything else.   Basically hiding everything but Home*/
+  .navBar a:not(:first-child) {
     display: none;
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5);
   }
-/*Brings the menu icon into view and floats it to the right*/
-  .navBar a.icon{
-    display: block; float: right;
+  /*Brings the menu icon into view and floats it to the right*/
+  .navBar a.icon {
+    display: block;
+    float: right;
   }
-  
-/*The navBar class will be changed to 'navBar responsive' using JS. This chunk of CSS makes the menu icon stay where it is by making the position absolute within it's parent 'right top corner'. Without this, the icon will get kicked around when the items are collapsed and expanded*/
+
+  /*The navBar class will be changed to 'navBar responsive' using JS. This chunk of CSS makes the menu icon stay where it is by making the position absolute within it's parent 'right top corner'. Without this, the icon will get kicked around when the items are collapsed and expanded*/
   .navBar.responsive {
     position: relative;
   }
@@ -87,8 +87,8 @@ Removes the underline with text decoration = none.*/
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  
-/*Removes the originally set float and brings them to view*/
+
+  /*Removes the originally set float and brings them to view*/
   .navBar.responsive a {
     float: none;
     display: block;
@@ -96,184 +96,194 @@ Removes the underline with text decoration = none.*/
     background-color: black;
   }
 
-  .navBar.responsive a:hover{
+  .navBar.responsive a:hover {
     background-color: white;
     color: black;
   }
 }
 
 @media only screen and (max-width: 967px) {
-
-  #carouselExampleIndicators{
+  #carouselExampleIndicators {
     /* display: block; */
     /* grid-template-columns: 1fr; */
     max-width: 100%;
     max-height: 100%;
     padding: 1rem;
-   }
+  }
 
-   .info-home{
+  .info-home {
     /* border: 1px solid black; */
     box-sizing: content-box;
     word-wrap: break-word;
     overflow: hidden;
+  }
 
-   }
-
-   .text-home{
-  width: 100%;
-  height: 100%;
+  .text-home {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 5px 20px;
     /* background-color: red; */
-   }
+  }
 
-   .text-home p{
+  .text-home p {
     /* background:red; */
     /* Control de la altura con base en el texto del div*/
     width: 80%;
     word-wrap: break-word;
-    
-   }
+  }
 
-   .grupo-2 .derechos{
+  .grupo-2 .derechos {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-   }
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  
-  .titulo{
+  .titulo {
     color: rgba(221, 59, 10, 0.921);
     font-weight: bold;
     text-shadow: #000 1px 1px 1px;
     font-size: 2rem;
     margin: -1.6rem;
     /* transition: 0.4s; */
-    }
-  
-    /* .titulo:hover{
-      transform: translateX(2rem);
-    } */
-    #carouselExampleIndicators{
-      /* display: block; */
-      /* grid-template-columns: 1fr; */
-      max-width: 100%;
-      max-height: 100%;
-      padding: 1rem;
-     }
-
-     .grupo-2 .derechos{
-      justify-content: center;
-      text-align: center;
-      margin: 0 auto;
-     }
-
-     .info-home{
-      /* border: 1px solid black; */
-      box-sizing: content-box;
-      word-wrap: break-word;
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-     }
-  
-     .text-home{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-      justify-content: center;
-      flex-direction: column;
-      padding: 5px 20px;
-      
-     }
-  
-     .article-img{
-      
-      padding: 2rem;
-      /* Control de la altura con base en el texto del div*/
-      width: 60%;
-      word-wrap: break-word;
-      
-     }
-     .logo-footer{
-    display: none;
-   }
-  .grupo-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   }
-}
-
-@media screen and (max-width: 576px) {
-
-  .titulo{
-  color: rgba(221, 59, 10, 0.921);
-  font-weight: bold;
-  text-shadow: #000 1px 1px 1px;
-  font-size: 2rem;
-  margin: -1.5rem;
-  /* transition: 0.4s; */
   }
 
   /* .titulo:hover{
-    transform: translateX(2rem);
-  } */
-  #carouselExampleIndicators{
+      transform: translateX(2rem);
+    } */
+  #carouselExampleIndicators {
     /* display: block; */
     /* grid-template-columns: 1fr; */
     max-width: 100%;
     max-height: 100%;
     padding: 1rem;
-   }
+  }
 
-   .grupo-2 .derechos{
+  .grupo-2 .derechos {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-   }
+  }
 
-   .info-home{
+  .info-home {
     /* border: 1px solid black; */
     box-sizing: content-box;
     word-wrap: break-word;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-   }
+  .text-home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 20px;
+  }
 
-   .text-home{
-  width: 100%;
-  height: 100%;
+  .article-img {
+    padding: 2rem;
+    /* Control de la altura con base en el texto del div*/
+    width: 60%;
+    word-wrap: break-word;
+  }
+  .logo-footer {
+    display: none;
+  }
+  .grupo-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .titulo {
+    color: rgba(221, 59, 10, 0.921);
+    font-weight: bold;
+    text-shadow: #000 1px 1px 1px;
+    font-size: 2rem;
+    margin: -1.5rem;
+    /* transition: 0.4s; */
+  }
+
+  /* .titulo:hover{
+    transform: translateX(2rem);
+  } */
+  #carouselExampleIndicators {
+    /* display: block; */
+    /* grid-template-columns: 1fr; */
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+  }
+
+  .grupo-2 .derechos {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .info-home {
+    /* border: 1px solid black; */
+    box-sizing: content-box;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+
+  .contact-h2__titulo{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .main-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .opcion {
+    height: 0.1rem;
+    width: 0.1rem;
+    padding: 0 4px;
+  }
+
+  .text-home {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 5px 20px;
-   }
+  }
 
-   .text-home p{
+  .text-home p {
     /* background:red; */
     /* Control de la altura con base en el texto del div*/
     width: 45%;
     word-wrap: break-word;
     /* background-color: red; */
-   }
+  }
 
-   .logo-footer{
+  .logo-footer {
     display: none;
-   }
-  .grupo-1{
+  }
+  .grupo-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   }
+  }
 }
 
 .nav-div1,
