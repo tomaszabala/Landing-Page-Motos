@@ -122,4 +122,8 @@ h3 {
   h3 > span {
     padding: 0;
   }
+
+  .videos{
+    height: min-content;
+  }
 }

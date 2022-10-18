@@ -116,6 +116,11 @@ Removes the underline with text decoration = none.*/
     box-sizing: content-box;
     word-wrap: break-word;
     overflow: hidden;
+    /* background-color: red; */
+    display: flex;
+    /* background-color: blue; */
+    padding: 2rem;
+    /* flex-direction: c; */
   }
 
   .text-home {
@@ -124,7 +129,8 @@ Removes the underline with text decoration = none.*/
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 5px 20px;
+    align-items: center;
+    /* padding: 5px 20px; */
     /* background-color: red; */
   }
 
@@ -170,7 +176,7 @@ Removes the underline with text decoration = none.*/
   }
 
   .info-home {
-    background-color: red;
+    /* background-color: red; */
     /* border: 1px solid black; */
     box-sizing: content-box;
     word-wrap: break-word;
@@ -416,10 +422,12 @@ body {
 
 /* INFO HOME */
 
+/* MODIFICAR ESTE SABIENDO QUE SE VAN A CAMBIAR LOS OTROS */
 .info-home {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 6rem;
+  background-color: red;
 }
 
 .titulo {
