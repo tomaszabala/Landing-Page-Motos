@@ -31,6 +31,8 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  /* left: 25rem;
+  position: relative; */
 }
 
 .navBar {
@@ -38,7 +40,6 @@
   overflow: visible;
   width: 100%;
   position: relative;
-
   /* height: inherit; */
 }
 
@@ -111,6 +112,12 @@ Removes the underline with text decoration = none.*/
     padding: 1rem;
   }
 
+  .nav-main{
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .info-home {
     /* border: 1px solid black; */
     box-sizing: content-box;
@@ -161,12 +168,18 @@ Removes the underline with text decoration = none.*/
   /* .titulo:hover{
       transform: translateX(2rem);
     } */
+
+  .nav-main{
+    z-index: 20;
+  }
+
   #carouselExampleIndicators {
     /* display: block; */
     /* grid-template-columns: 1fr; */
     max-width: 100%;
     max-height: 100%;
     padding: 1rem;
+    z-index: -1;
   }
 
   .grupo-2 .derechos {
@@ -231,6 +244,10 @@ Removes the underline with text decoration = none.*/
     /* transition: 0.4s; */
   }
 
+  .nav-main{
+    z-index: 20;
+  }
+
   /* .titulo:hover{
     transform: translateX(2rem);
   } */
@@ -240,6 +257,7 @@ Removes the underline with text decoration = none.*/
     max-width: 100%;
     max-height: 100%;
     padding: 1rem;
+    z-index: -1;
   }
 
   .grupo-2 .derechos {
@@ -288,6 +306,12 @@ Removes the underline with text decoration = none.*/
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    /* background-color: red; */
+  }
+
+  .text-section{
+    font-size: 1rem;
+    max-width: max-content;
   }
 
 
@@ -311,7 +335,6 @@ Removes the underline with text decoration = none.*/
     border-radius: 2rem;
     position: relative;
     right: 2rem;
-    /* margin-top: -2rem; */
   }
 
   .logo-footer {
@@ -427,7 +450,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 6rem;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .titulo {

@@ -9,3 +9,30 @@
 .li-img {
     height: 35rem;
 }
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For medium devices */
+@media only screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    /* .info-home{
+     
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+        right: 10em;
+    } */
+
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  
+}

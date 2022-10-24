@@ -14,7 +14,7 @@ html {
 
 body {
   background-color: #ecf4fb;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -123,7 +123,4 @@ h3 {
     padding: 0;
   }
 
-  .videos{
-    height: min-content;
-  }
 }
