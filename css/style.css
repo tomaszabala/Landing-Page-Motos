@@ -267,6 +267,23 @@ body {
              border-radius: 61px;
 }
 
+.moto-img{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.moto-img-li{
+  /* background-color: red; */
+  margin: 1rem;
+  padding: 1rem;
+  background: #e0e0e0;
+  box-shadow:  5px 5px 27px #777777,
+             -5px -5px 27px #ffffff;
+             border-radius: 61px;
+}
+
 /* PIE DE PAGINA */
 
 /* .row{
