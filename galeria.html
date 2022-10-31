@@ -18,62 +18,45 @@
         <script src="https://kit.fontawesome.com/551b5bf235.js" crossorigin="anonymous"></script>
     </head>
     <body>
-      <header id="header">
-        <nav class="nav-main">
-          <div class="navBar" id="mainNavBar">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <!-- <a href="index.html" class="nav-link">Servicios</a> -->
-            <a href="armado-de-motores.html">Armado de motores</a>
-            <a href="potenciadores.html">Potenciadores</a>
-            <a href="customizaciones.html">Customizaciones</a>
-            <a href="services.html">Services</a>
-            <a href="contacto.html" class="nav-link">Contacto</a>
-            <a href="galeria.html" class="nav-link">Galería</a>
-            <a href="javascript:void(0);" class="icon" onClick="openDrawerMenu()">&#9776;</a>
-            <!--&#9776; is the code for the 3 line menu button-->
-          </div>
-        </nav>
-    </header>
+        <header id="header">
+            <nav class="nav-main">
+              <div class="navBar" id="mainNavBar">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <!-- <a href="index.html" class="nav-link">Servicios</a> -->
+                <a href="armado-de-motores.html">Armado de motores</a>
+                <a href="potenciadores.html">Potenciadores</a>
+                <a href="customizaciones.html">Customizaciones</a>
+                <a href="services.html">Services</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+                <a href="galeria.html" class="nav-link">Galería</a>
+                <a href="javascript:void(0);" class="icon" onClick="openDrawerMenu()">&#9776;</a>
+                <!--&#9776; is the code for the 3 line menu button-->
+              </div>
+            </nav>
+        </header>
 <main>
-    
-    <div class="modal-img" id="modal-imgBox">
-        <img src="./fotos-pagina/galeria1.png" class="imgmod" id="modal-img" alt="">
-        <span onclick="closeImg()">x</span>
-    </div>
 
-    <section class="galeria">
-
-        <article>
-            <h2 class="galeria-titulo">Galería</h2>
-            <h4 class="texto-intro">Una selección de fotos de nuestros mejores trabajos</h4>
-        </article>
-
-        <article class="article-img grid-container">
-            <img src="./fotos-pagina/galeria1.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria2.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria3.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/nico-chiquito.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria4.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria5.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria6.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria8.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria8.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria9.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria10.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria1.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria1.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria1.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria1.png" onclick="openModalImg(this.src)" alt="" class="img">
-            <img src="./fotos-pagina/galeria1.png" onclick="openModalImg(this.src)" alt="" class="img">
-        </article>
+    <section id="gallery-section">
+        <ul>
+            <li><img src="./fotos-pagina/galeria1.png" alt=""></li>
+            <li><img src="./fotos-pagina/galeria2.png" alt=""></li>
+            <li><img src="./fotos-pagina/galeria3.png" alt=""></li>
+            <li><img src="./fotos-pagina/nico-chiquito.png" alt=""></li>
+            <li><img src="./fotos-pagina/galeria4.png" alt=""></li>
+            <li><img src="./fotos-pagina/galeria5.png" alt=""></li>
+            <li><img src="./fotos-pagina/galeria6.png" alt=""></li>
+            <li><img src="./fotos-pagina/galeria8.png" alt=""></li>
+            <li><img src="./fotos-pagina/galeria9.png" alt=""></li>
+            <li><img src="./fotos-pagina/galeria10.png" alt=""></li>
+            <li><img src="https://picsum.photos/600/400?random=12" alt=""></li>
+          </ul>
+      </section>
 
         <article class="videos">
             <h3><span>Videos</span></h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/t7JMoss2gyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/LH51VXMRuKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </article>
-
-    </section>
 
 </main>
 <footer class="site-footer">
