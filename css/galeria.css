@@ -8,10 +8,6 @@
   padding: 0;
 }
 
-html {
-  height: 100vh;
-}
-
 body {
   background-color: #ecf4fb;
   display: flex;
@@ -38,7 +34,7 @@ h3 {
 
 .galeria-titulo {
   position: relative;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,16 +46,15 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .article-img {
   display: grid;
-  width: 80%;
-  margin: 50px auto;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 40px;
+   width: 50%;
+  grid-template-columns: repeat(2, 1fr)
 }
 
 .texto-intro {
