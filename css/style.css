@@ -175,7 +175,6 @@ body {
 
 /* INFO HOME */
 
-/* MODIFICAR ESTE SABIENDO QUE SE VAN A CAMBIAR LOS OTROS */
 .info-home {
   margin-right: auto;
   margin-left: auto;
@@ -278,6 +277,21 @@ body {
   box-shadow:  5px 5px 27px #777777,
              -5px -5px 27px #ffffff;
              border-radius: 61px;
+}
+
+.videos{
+  justify-content: center;
+  text-align: center;
+}
+
+.videos-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
 }
 
 .site-footer
@@ -422,9 +436,10 @@ body {
 
 /* BREACKPOINTS */
 
-
 /*Set your custom screen width here replacing 700*/
 @media (max-width: 967px) {
+
+  
   /*Ignores the first link (which is Home) in the div and       applies 'display = none' to everything else.   Basically hiding everything but Home*/
   .navBar a:not(:first-child) {
     display: none;
@@ -439,6 +454,7 @@ body {
   /*The navBar class will be changed to 'navBar responsive' using JS. This chunk of CSS makes the menu icon stay where it is by making the position absolute within it's parent 'right top corner'. Without this, the icon will get kicked around when the items are collapsed and expanded*/
   .navBar.responsive {
     position: relative;
+    z-index: 23;
   }
   .navBar.responsive a.icon {
     position: absolute;
@@ -446,6 +462,7 @@ body {
     top: 0;
     background-color: rgba(0, 0, 0, 0.5);
   }
+  
 
   /*Removes the originally set float and brings them to view*/
   .navBar.responsive a {
@@ -460,10 +477,15 @@ body {
     color: black;
   }
 
+  .titulo{
+    z-index: -2;
+  }
+
   #carouselExampleIndicators {
     max-width: 100%;
     max-height: 100%;
     padding: 1rem;
+    /* z-index: -1; */
   }
 
   .nav-main {
@@ -477,6 +499,10 @@ body {
     overflow: hidden;
     display: flex;
     padding: 2rem;
+    position: inherit;
+    height: 20rem;
+    width: 48rem;
+    flex-wrap: wrap;
   }
 
   .text-home {
@@ -486,6 +512,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 5rem;
   }
 
   .text-home p {
@@ -499,6 +526,11 @@ body {
     margin: 0 auto;
   }
 
+  .moto-img-li{
+    max-width: 100%;
+    padding: 2rem;
+  }
+
   .site-footer [class^=col-]
   {
     margin-bottom:30px
@@ -506,23 +538,25 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  .titulo {
-    color: rgba(221, 59, 10, 0.921);
-    font-weight: bold;
-    text-shadow: #000 1px 1px 1px;
-    font-size: 2rem;
-    margin: -1.6rem;
-  }
 
   .nav-main {
     z-index: 20;
+  }
+
+  .titulo{
+    font-size: 2rem;
+    font-weight: 10rem;
+  }
+
+  .sub_titulo{
+    display: none;
   }
 
   #carouselExampleIndicators {
     max-width: 100%;
     max-height: 100%;
     padding: 1rem;
-    z-index: -1;
+    z-index: 1;
   }
 
   .grupo-2 .derechos {
@@ -534,8 +568,13 @@ body {
   .info-home {
     box-sizing: content-box;
     word-wrap: break-word;
-    overflow: hidden;
     display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 2rem;
+    position: inherit;
+    height: 22rem;
+    width: 38rem;
     flex-wrap: wrap;
   }
 
@@ -553,14 +592,16 @@ body {
   .li-img {
     border-radius: 2rem;
     position: relative;
-    right: 2rem;
+    max-width: 100%;
+    background-color: red;
   }
 
   .article-img {
     padding: 2rem;
-    width: 60%;
+    max-width: 100%;
     word-wrap: break-word;
   }
+
   .logo-footer {
     display: none;
   }
@@ -588,23 +629,21 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  .titulo {
-    color: rgba(221, 59, 10, 0.921);
-    font-weight: bold;
-    text-shadow: #000 1px 1px 1px;
-    font-size: 2rem;
-    margin: -1.5rem;
-  }
 
   .nav-main {
     z-index: 20;
   }
 
-  #carouselExampleIndicators {
+  .titulo{
+    font-size: 2rem;
+    font-weight: 10rem;
+  }
+
+    #carouselExampleIndicators {
     max-width: 100%;
     max-height: 100%;
     padding: 1rem;
-    z-index: -1;
+    z-index: 1;
   }
 
   .grupo-2 .derechos {
@@ -616,8 +655,17 @@ body {
   .info-home {
     box-sizing: content-box;
     word-wrap: break-word;
-    overflow: hidden;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    position: inherit;
+    height: 22rem;
+    width: 26rem;
+    flex-wrap: wrap;
   }
+
 
   .contact-h2__titulo {
     color: rgba(0, 0, 0, 0.5);
@@ -630,10 +678,11 @@ body {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    padding: 0;
   }
 
   .text-section {
-    font-size: 1rem;
+    font-size: 15px;
     max-width: max-content;
   }
 
@@ -650,6 +699,18 @@ body {
     border-radius: 2rem;
     position: relative;
     right: 2rem;
+    max-width: 100%;
+  }
+
+  .article-img {
+    padding: 2rem;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .moto-img-li{
+    max-width: 100%;
+    padding: 1rem;
   }
 
   .logo-footer {
