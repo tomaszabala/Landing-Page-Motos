@@ -24,6 +24,7 @@ body{
   color: white;
   height: 3rem;
   background-color: black;
+  z-index: 1000;
 }
 
 .navBar {
@@ -243,11 +244,6 @@ body {
   list-style: none;
 }
 
-/* .section-fotosMuestra{
-  background-color: red;
-  padding: 1re;
-} */
-
 .article-img{ 
   display: flex;
   flex-wrap: wrap;
@@ -283,17 +279,6 @@ body {
              -5px -5px 27px #ffffff;
              border-radius: 61px;
 }
-
-/* PIE DE PAGINA */
-
-/* .row{
-  padding-top: 1rem;
-} */
-
-/* .container{
-    padding-bottom: -1rem;
-    margin-bottom: -1rem;
-  } */
 
 .site-footer
 {
@@ -370,24 +355,7 @@ body {
 {
   margin:0
 }
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
+
 .social-icons
 {
   padding-left:0;
@@ -450,109 +418,48 @@ body {
 {
   background-color:#ea4c89
 }
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-/* .pie-pagina {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
-  color: #fff;
-}
 
-.grupo-1 {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.logo-footer {
-  margin: 10% 0%;
-  height: 10rem;
-  width: 15rem;
-  border-radius: 50%;
-  background-color: white;
-}
-
-.footer-name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.frase-footer{
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.frase2-footer {
-  font-size: 1rem;
-  width: 15rem;
-  text-decoration: underline;
-}
-
-.turno-wpp {
-  margin-top: 1rem;
-}
-
-.turno {
-  font-size: 18px;
-  margin: 0;
-  height: 1.3rem;
-}
-
-.fb,
-.ig,
-.yt {
-  color: #000;
-}
-
-.recuadro-footer {
-  width: 100%;
-  height: 2.5px;
-  background-color: rgba(244, 103, 60, 0.944);
-}
-
-.derechos {
-  display: flex;
-  justify-content: center;
-  justify-content: flex-end;
-}
-
-.red-social{
-  font-size: 3rem;
-}
-
-.fa-facebook:hover {
-  color: #1877f2;
-}
-
-.fa-instagram:hover {
-  color: #fe1a85;
-}
-
-.fa-youtube:hover {
-  color: #fc0101;
-}
-
-.wpp {
-  font-size: 30px;
-  color: #000;
-  text-decoration: none;
-}
-
-.wpp:hover {
-  color: rgba(244, 103, 60, 0.944);
-} */
 
 /* BREACKPOINTS */
-@media only screen and (max-width: 967px) {
+
+
+/*Set your custom screen width here replacing 700*/
+@media (max-width: 967px) {
+  /*Ignores the first link (which is Home) in the div and       applies 'display = none' to everything else.   Basically hiding everything but Home*/
+  .navBar a:not(:first-child) {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  /*Brings the menu icon into view and floats it to the right*/
+  .navBar a.icon {
+    display: block;
+    float: right;
+  }
+
+  /*The navBar class will be changed to 'navBar responsive' using JS. This chunk of CSS makes the menu icon stay where it is by making the position absolute within it's parent 'right top corner'. Without this, the icon will get kicked around when the items are collapsed and expanded*/
+  .navBar.responsive {
+    position: relative;
+  }
+  .navBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /*Removes the originally set float and brings them to view*/
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    background-color: black;
+  }
+
+  .navBar.responsive a:hover {
+    background-color: white;
+    color: black;
+  }
+
   #carouselExampleIndicators {
     max-width: 100%;
     max-height: 100%;
@@ -590,6 +497,11 @@ body {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+  }
+
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
   }
 }
 
@@ -658,43 +570,20 @@ body {
     justify-content: center;
     align-items: center;
   }
-}
-
-/*Set your custom screen width here replacing 700*/
-@media (max-width: 970px) {
-  /*Ignores the first link (which is Home) in the div and       applies 'display = none' to everything else.   Basically hiding everything but Home*/
-  .navBar a:not(:first-child) {
-    display: none;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  /*Brings the menu icon into view and floats it to the right*/
-  .navBar a.icon {
-    display: block;
-    float: right;
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
   }
 
-  /*The navBar class will be changed to 'navBar responsive' using JS. This chunk of CSS makes the menu icon stay where it is by making the position absolute within it's parent 'right top corner'. Without this, the icon will get kicked around when the items are collapsed and expanded*/
-  .navBar.responsive {
-    position: relative;
+  .site-footer
+  {
+    padding-bottom:0
   }
-  .navBar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  /*Removes the originally set float and brings them to view*/
-  .navBar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-    background-color: black;
-  }
-
-  .navBar.responsive a:hover {
-    background-color: white;
-    color: black;
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
   }
 }
 
