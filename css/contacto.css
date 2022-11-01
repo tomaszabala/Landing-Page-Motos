@@ -390,3 +390,23 @@ body > div {
   position: relative;
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 414px) {
+
+  .section-contact{
+    width: 100%;
+    position: relative;
+    right: 3.1rem;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .section-contact{
+    width: 100%;
+    position: relative;
+    right: 3.1rem;
+  }
+
+}
