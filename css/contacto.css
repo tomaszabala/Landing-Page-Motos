@@ -164,23 +164,24 @@ body > div {
     font-size: 100px;
   }
 }
+/*  */
 
 /* Defult Settings */
 
-.card-body{
+.card-body {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.card-header{
+.card-header {
   padding-top: 2rem;
 }
 
 #animated-cards .card-header {
   height: 200px;
   background-color: white;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
